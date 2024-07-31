@@ -9,7 +9,7 @@ const MyBookings = () => {
   const myBookings = async () => {
     const access = localStorage.getItem('customer_token');
     try {
-      const response = await fetch(`${process.env.VITE_BACKEND_API}/api/flight/mybookings`, {
+      const response = await fetch(`${process.env.VITE_BACKEND_API}api/flight/mybookings`, {
         method: "GET",
         headers: {
           "Content-Type": 'application/json',

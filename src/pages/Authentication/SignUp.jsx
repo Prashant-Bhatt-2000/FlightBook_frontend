@@ -18,7 +18,7 @@ const Signup = () => {
 
   const SignUp = async (e) => {
     e.preventDefault()
-    const response = await fetch(`${process.env.VITE_BACKEND_API}/api/accounts/customersignup`, {
+    const response = await fetch(`${process.env.VITE_BACKEND_API}api/accounts/customersignup`, {
       method: "POST",
       headers: {
         'Content-Type': 'application/json'

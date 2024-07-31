@@ -28,7 +28,7 @@ const Flights = () => {
   const access = localStorage.getItem('customer_token');
 
   const GetFlights = async ()=> { 
-    const response = await fetch(`${process.env.VITE_BACKEND_API}/api/flight/getflights`, { 
+    const response = await fetch(`${process.env.VITE_BACKEND_API}api/flight/getflights`, { 
         method: 'GET', 
         headers: { 
             'Content-Type': 'application/json',

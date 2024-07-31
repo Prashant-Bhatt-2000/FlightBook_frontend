@@ -17,7 +17,7 @@ const Login = () => {
   const Signin = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch(`${import.meta.env.VITE_BACKEND_API}/api/accounts/customersignin`, {
+      const response = await fetch(`${import.meta.env.VITE_BACKEND_API}api/accounts/customersignin`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

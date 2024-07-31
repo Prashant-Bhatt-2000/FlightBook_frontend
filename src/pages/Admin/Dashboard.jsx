@@ -86,7 +86,7 @@ const Dashboard = () => {
     const handleCreateFlight = async () => {
         try {
             const access = localStorage.getItem('admin_token');
-            const response = await fetch(`${process.env.VITE_BACKEND_API}/api/flight/createflight`, { 
+            const response = await fetch(`${process.env.VITE_BACKEND_API}api/flight/createflight`, { 
                 method: 'POST', 
                 headers: { 
                     'Content-Type': 'application/json',
